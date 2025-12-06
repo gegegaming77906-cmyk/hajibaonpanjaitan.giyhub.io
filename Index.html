@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan [Solah&Fatimah]</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="cover" class="section-full">
+      <div class="cover-content">
+        <p>The Wedding of</p>
+        <h1>Nama Pria & Nama Wanita</h1>
+        <p>Kepada Yth. Bapak/Ibu/Sdr/i</p>
+        <h2 id="guest-name">Tamu Undangan</h2>
+        
+        <button id="open-invitation-btn">Buka Undangan</button>
+      </div>
+    </section>
+
+    <main id="main-content" class="hidden">
+      <section id="sampul" class="section">
+        <video
+          controls
+          src="Terlalu Cinta_ - Rossa And Her Stage Squad (Livestreamed at Neno Fest 2020).mp4"
+          width="100%"
+        ></video>
+        <p>
+          "Terlalu Cinta" - Rossa And Her Stage Squad (Livestreamed at Neno Fest
+          2020)
+        </p>
+        <br /><br /><br /><br /><br />
+        <img src="unnamed.jpg" alt="Foto Pasangan" class="header-image" />
+
+        <br /><br /><br />
+        <div class="date-box">
+          <p class="date">7 Desember 2025</p>
+          <p class="location">Sukabumi</p>
+        </div>
+      </section>
+
+      <section id="sambutan" class="section">
+        <h2>Bismillahirrohmanirrohim</h2>
+        <p class="quote">
+          "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu
+          pasangan-pasangan dari jenismu sendiri, supaya kamu cenderung dan
+          merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih
+          dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+          tanda-tanda bagi kaum yang berfikir."
+        </p>
+
+        <p>(QS. Ar-Rum: 21)</p>
+      </section>
+
+      <section id="pasangan" class="section">
+        <h2>Mempelai</h2>
+        <div class="mempelai-card">
+          <h3>Nama Pria</h3>
+          <p>Putra dari Bapak [Nama Ayah Pria] & Ibu [Nama Ibu Pria]</p>
+          <a href="#" class="social-link">Instagram Pria</a>
+        </div>
+        <p class="separator">dengan</p>
+        <div class="mempelai-card">
+          <h3>Nama Wanita</h3>
+          <p>Putri dari Bapak [Nama Ayah Wanita] & Ibu [Nama Ibu Wanita]</p>
+          <a href="#" class="social-link">Instagram Wanita</a>
+        </div>
+      </section>
+
+      <section id="acara" class="section">
+        <h2>Waktu dan Tempat</h2>
+        <div class="event-card">
+          <h3>Akad Nikah</h3>
+          <p>Minggu, 7 Desember 2025</p>
+          <p>Pukul 09.00 WIB</p>
+          <p>Lokasi: Masjid Agung Al-Azhar</p>
+        </div>
+        <div class="event-card">
+          <h3>Resepsi Pernikahan</h3>
+          <p>Minggu, 7 Desember 2025</p>
+          <p>Pukul 11.00 - 13.00 WIB</p>
+          <p>Lokasi: Balai Kartini</p>
+        </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4250197094384!2d106.88873247419339!3d-6.959086468132706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6839747a7d5d7b%3A0x9cdfbd577c27de51!2sTerminal%20Lembursitu!5e0!3m2!1sid!2sid!4v1765059292560!5m2!1sid!2sid""
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <a href="https://maps.app.goo.gl/E85sh4FNGgVbaWM2A" target="_blank" class="btn"
+          >Buka di Google Maps</a
+        >
+      </section>
+
+      <section id="galeri" class="section">
+        <h2>Momen Kami</h2>
+        <div class="photo-grid">
+          <img src="assets/images/photo1.jpg" alt="Photo 1" />
+          <img src="assets/images/photo2.jpg" alt="Photo 2" />
+          <img src="assets/images/photo3.jpg" alt="Photo 3" />
+        </div>
+      </section>
+
+      <section id="rsvp" class="section">
+        <h2>Konfirmasi Kehadiran (RSVP)</h2>
+        <form id="rsvp-form">
+          <label for="nama-tamu">Nama Anda:</label>
+          <input type="text" id="nama-tamu" name="nama" required />
+
+          <label for="konfirmasi">Konfirmasi Kehadiran:</label>
+          <select id="konfirmasi" name="hadir" required>
+            <option value="">Pilih Status</option>
+            <option value="hadir">Insya Allah Hadir</option>
+            <option value="tidak-hadir">Maaf, Tidak Bisa Hadir</option>
+          </select>
+
+          <label for="jumlah-orang">Jumlah Orang:</label>
+          <input
+            type="number"
+            id="jumlah-orang"
+            name="jumlah"
+            min="1"
+            value="1"
+            required
+          />
+
+          <label for="ucapan">Kirim Ucapan & Doa:</label>
+          <textarea id="ucapan" name="ucapan" rows="4"></textarea>
+
+          <button type="submit" class="btn">Kirim Konfirmasi</button>
+          <p id="form-message" class="message"></p>
+        </form>
+      </section>
+
+      <section id="ucapan-area" class="section">
+        <h2>Doa dan Harapan</h2>
+        <div id="comments-list" class="comments-list"></div>
+      </section>
+
+      <section id="penutup" class="section">
+        <p>
+          Atas kehadiran dan doa restu Bapak/Ibu/Sdr/i, kami ucapkan terima
+          kasih.
+        </p>
+        <h3>Kami yang berbahagia,</h3>
+        <h1>Nama Pria & Nama Wanita</h1>
+      </section>
+    </main>
+
+    <button id="music-toggle" class="music-btn">
+      <span id="music-icon">🎵</span>
+    </button>
+    <audio id="background-music" loop src="videoplayback.m4a"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
